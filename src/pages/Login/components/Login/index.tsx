@@ -54,14 +54,14 @@ export default function Login() {
         {loginType === 'password' && (
           <>
             <FormItem name='account' rules={[{ required: true, message: '账号必填', type: 'error' }]}>
-              <Input size='large' placeholder='请输入账号：admin' prefixIcon={<UserIcon />}></Input>
+              <Input size='large' placeholder='请输入账号' prefixIcon={<UserIcon />}></Input>
             </FormItem>
             <FormItem name='password' rules={[{ required: true, message: '密码必填', type: 'error' }]}>
               <Input
                 size='large'
                 type={showPsw ? 'text' : 'password'}
                 clearable
-                placeholder='请输入登录密码：admin'
+                placeholder='请输入登录密码'
                 prefixIcon={<LockOnIcon />}
                 suffixIcon={
                   showPsw ? (
